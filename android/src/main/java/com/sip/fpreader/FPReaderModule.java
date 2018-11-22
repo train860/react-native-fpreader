@@ -44,6 +44,7 @@ public class FPReaderModule extends ReactContextBaseJavaModule implements Lifecy
 
     public FPReaderModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        reactContext.addLifecycleEventListener(this);
         mContext=reactContext;
     }
 
